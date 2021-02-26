@@ -60,6 +60,8 @@
 		87EAADAB22D9370F0044CF9F /* StickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87EAAD8422D9370F0044CF9F /* StickerCollectionViewCell.xib */; };
 		87EAADAC22D9370F0044CF9F /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EAAD8522D9370F0044CF9F /* StickerCollectionViewCell.swift */; };
 		87EAADAD22D9370F0044CF9F /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EAAD8622D9370F0044CF9F /* ColorCollectionViewCell.swift */; };
+		B97892B025E94AEA00C91D62 /* ColorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B97892AF25E94AEA00C91D62 /* ColorCollectionViewCell.m */; };
+		B97892B725E95AE100C91D62 /* ColorsCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B97892B625E95AE100C91D62 /* ColorsCollectionViewDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +106,10 @@
 		87EAAD8422D9370F0044CF9F /* StickerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StickerCollectionViewCell.xib; sourceTree = "<group>"; };
 		87EAAD8522D9370F0044CF9F /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		87EAAD8622D9370F0044CF9F /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		B97892AF25E94AEA00C91D62 /* ColorCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCollectionViewCell.m; sourceTree = "<group>"; };
+		B97892B325E94B6200C91D62 /* ColorCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorCollectionViewCell.h; sourceTree = "<group>"; };
+		B97892B525E9592800C91D62 /* ColorsCollectionViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorsCollectionViewDelegate.h; sourceTree = "<group>"; };
+		B97892B625E95AE100C91D62 /* ColorsCollectionViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorsCollectionViewDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +146,12 @@
 				87EAAD8322D9370F0044CF9F /* Assets.xcassets */,
 				87EAAD6A22D9370D0044CF9F /* Base.lproj */,
 				87EAAD8622D9370F0044CF9F /* ColorCollectionViewCell.swift */,
+				B97892AF25E94AEA00C91D62 /* ColorCollectionViewCell.m */,
+				B97892B325E94B6200C91D62 /* ColorCollectionViewCell.h */,
 				87EAAD7022D9370D0044CF9F /* ColorCollectionViewCell.xib */,
 				87EAAD7C22D9370E0044CF9F /* ColorsCollectionViewDelegate.swift */,
+				B97892B525E9592800C91D62 /* ColorsCollectionViewDelegate.h */,
+				B97892B625E95AE100C91D62 /* ColorsCollectionViewDelegate.m */,
 				87EAAD7422D9370D0044CF9F /* CropRectView.swift */,
 				87EAAD6F22D9370D0044CF9F /* CropView.swift */,
 				87EAAD5E22D9370C0044CF9F /* CropViewController.swift */,
@@ -235,7 +245,7 @@
 					};
 					87EAAD5222D936E30044CF9F = {
 						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -314,6 +324,7 @@
 				87EAAD8722D9370F0044CF9F /* CropViewController.swift in Sources */,
 				87EAADAC22D9370F0044CF9F /* StickerCollectionViewCell.swift in Sources */,
 				87EAAD9222D9370F0044CF9F /* PhotoEditor+Crop.swift in Sources */,
+				B97892B725E95AE100C91D62 /* ColorsCollectionViewDelegate.m in Sources */,
 				87EAAD9C22D9370F0044CF9F /* StickersViewController.swift in Sources */,
 				87EAAD9522D9370F0044CF9F /* UIImageView+Alpha.swift in Sources */,
 				87EAAD9922D9370F0044CF9F /* ResizeControl.swift in Sources */,
@@ -326,6 +337,7 @@
 				87EAAD9022D9370F0044CF9F /* PhotoEditor+Drawing.swift in Sources */,
 				87EAAD9E22D9370F0044CF9F /* PhotoEditor+Gestures.swift in Sources */,
 				87EAAD9622D9370F0044CF9F /* CropView.swift in Sources */,
+				B97892B025E94AEA00C91D62 /* ColorCollectionViewCell.m in Sources */,
 				87EAADA522D9370F0044CF9F /* PhotoEditor+UITextView.swift in Sources */,
 				87EAAD8D22D9370F0044CF9F /* PhotoEditor+Keyboard.swift in Sources */,
 				87EAAD9D22D9370F0044CF9F /* UIImage+Crop.swift in Sources */,
@@ -425,6 +437,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -482,6 +495,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
