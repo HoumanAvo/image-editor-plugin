@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <OSPhotoEditor/PhotoEditorViewController.h>
 
 //! Project version number for OSPhotoEditor.
 FOUNDATION_EXPORT double OSPhotoEditorVersionNumber;

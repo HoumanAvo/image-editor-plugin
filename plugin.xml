@@ -18,7 +18,9 @@
         <framework src="iOSPhotoEditor" type="podspec" embed="true" /> 
         <framework src="iOSPhotoEditor" type="podspec" />-->
 
-        <source-file src="src/ios/ImageEditorPlugin.swift" />
+        <!--source-file src="src/ios/ImageEditorPlugin.swift" /-->
+        <header-file src="src/ios/ImageEditorPlugin.h" />
+        <source-file src="src/ios/ImageEditorPlugin.m" />
         <!-- <podspec>
             <config>
                 <source url="https://github.com/brightcove/BrightcoveSpecs.git" />
