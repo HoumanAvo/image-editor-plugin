@@ -58,14 +58,12 @@
 		B99A68DD262DC7850073A99D /* PhotoEditor+Gestures.m in Sources */ = {isa = PBXBuildFile; fileRef = B99A68DC262DC7850073A99D /* PhotoEditor+Gestures.m */; };
 		B99A68E1262DC7920073A99D /* PhotoEditor+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B99A68E0262DC7920073A99D /* PhotoEditor+Keyboard.m */; };
 		B99A68E7262DC7B30073A99D /* PhotoEditor+StickersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B99A68E6262DC7B30073A99D /* PhotoEditor+StickersViewController.m */; };
-		B99A6900262F2E900073A99D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B99A68FF262F2E900073A99D /* AppDelegate.m */; };
 		B99A699A26303F740073A99D /* PhotoEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B99A6853262598510073A99D /* PhotoEditorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B99A699F263040160073A99D /* UIView+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965E225ED4BEB0081D7FC /* UIView+Image.h */; };
 		B99A69A22630404D0073A99D /* ColorsCollectionViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B97892B525E9592800C91D62 /* ColorsCollectionViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B99A69A72630406C0073A99D /* ColorCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B97892B325E94B6200C91D62 /* ColorCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B99A69AC263040930073A99D /* UIImage+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965EA25ED5E140081D7FC /* UIImage+Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B99A69B12630409B0073A99D /* UIImage+Crop.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965F325ED61020081D7FC /* UIImage+Crop.h */; };
-		B99A69B42630409F0073A99D /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B99A68FE262F2D160073A99D /* AppDelegate.h */; };
 		B99A69B7263040A90073A99D /* UIImageView+Alpha.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965E925ED4D960081D7FC /* UIImageView+Alpha.h */; };
 		B99A69BA263040B10073A99D /* StickersViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965F425EE8C630081D7FC /* StickersViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B99A69BF263040D00073A99D /* StickerCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B99A6847261CA2330073A99D /* StickerCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -148,8 +146,6 @@
 		B99A68E4262DC79A0073A99D /* PhotoEditor+Keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoEditor+Keyboard.h"; sourceTree = "<group>"; };
 		B99A68E5262DC7A80073A99D /* PhotoEditor+StickersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoEditor+StickersViewController.h"; sourceTree = "<group>"; };
 		B99A68E6262DC7B30073A99D /* PhotoEditor+StickersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PhotoEditor+StickersViewController.m"; sourceTree = "<group>"; };
-		B99A68FE262F2D160073A99D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B99A68FF262F2E900073A99D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,13 +234,11 @@
 				B94965EB25ED5E1D0081D7FC /* UIImage+Size.m */,
 				B94965EA25ED5E140081D7FC /* UIImage+Size.h */,
 				B94965E925ED4D960081D7FC /* UIImageView+Alpha.h */,
-				B99A68FF262F2E900073A99D /* AppDelegate.m */,
 				B94965E325ED4D8C0081D7FC /* UIImageView+Alpha.m */,
 				B94965DC25ED4BE20081D7FC /* UIView+Image.m */,
 				B94965E225ED4BEB0081D7FC /* UIView+Image.h */,
 				87EAAD5622D936E30044CF9F /* OSPhotoEditor.h */,
 				87EAAD5722D936E30044CF9F /* Info.plist */,
-				B99A68FE262F2D160073A99D /* AppDelegate.h */,
 			);
 			path = OSPhotoEditor;
 			sourceTree = "<group>";
@@ -281,7 +275,6 @@
 				B99A69C4263040D90073A99D /* ResizeControl.h in Headers */,
 				B99A69ED263041200073A99D /* CropRectView.h in Headers */,
 				B99A69CD263040EE0073A99D /* PhotoEditor+Gestures.h in Headers */,
-				B99A69B42630409F0073A99D /* AppDelegate.h in Headers */,
 				B99A69D6263040FB0073A99D /* PhotoEditor+Crop.h in Headers */,
 				B99A69DC263041050073A99D /* GradientView.h in Headers */,
 				B99A69A72630406C0073A99D /* ColorCollectionViewCell.h in Headers */,
@@ -412,7 +405,6 @@
 				B99A68552625C6CB0073A99D /* PhotoEditor+Controls.m in Sources */,
 				B99A68DD262DC7850073A99D /* PhotoEditor+Gestures.m in Sources */,
 				B97892B725E95AE100C91D62 /* ColorsCollectionViewDelegate.m in Sources */,
-				B99A6900262F2E900073A99D /* AppDelegate.m in Sources */,
 				B94965F625EE8C6B0081D7FC /* StickersViewController.m in Sources */,
 				B94965F025ED60F90081D7FC /* UIImage+Crop.m in Sources */,
 				B99A687626275CB60073A99D /* EmojiCollectionViewCell.m in Sources */,

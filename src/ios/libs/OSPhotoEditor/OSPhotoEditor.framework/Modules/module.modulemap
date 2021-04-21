@@ -4,8 +4,3 @@ framework module OSPhotoEditor {
   export *
   module * { export * }
 }
-
-module OSPhotoEditor.Swift {
-    header "OSPhotoEditor-Swift.h"
-    requires objc
-}
