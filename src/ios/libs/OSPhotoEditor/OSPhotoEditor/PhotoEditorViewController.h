@@ -21,7 +21,7 @@
 /** holding the 2 imageViews original image and drawing & stickers */
 @property(weak)IBOutlet UIView* canvasView;
 //To hold the image
-@property()IBOutlet UIImageView* imageView;
+@property(nonatomic)IBOutlet UIImageView* imageView;
 @property(weak)IBOutlet NSLayoutConstraint* imageViewHeightConstraint;
 //To hold the drawings and stickers
 @property(weak)IBOutlet UIImageView* canvasImageView;
