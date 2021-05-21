@@ -39,7 +39,7 @@ typedef enum Control : NSUInteger {
 -(IBAction) continueButtonPressed:(id) sender;
 //MAKR: helper methods
 
--(void) image;
+-(void) image:(UIImage*) image withPotentialError:(NSError*) error contextInfo:(void*) context;
 -(void) hideControls;
 @end
 

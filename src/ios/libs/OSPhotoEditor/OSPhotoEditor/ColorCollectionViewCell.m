@@ -16,15 +16,15 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    _colorView.layer.cornerRadius = _colorView.frame.size.width/2;
-    _colorView.clipsToBounds = true;
-    _colorView.layer.borderWidth = 1.0;
-    _colorView.layer.borderColor = UIColor.whiteColor.CGColor;
+    self.colorView.layer.cornerRadius = self.colorView.frame.size.width/2;
+    self.colorView.clipsToBounds = true;
+    self.colorView.layer.borderWidth = 1.0;
+    self.colorView.layer.borderColor = UIColor.whiteColor.CGColor;
 }
 
 - (void)setIsSelected:(BOOL) isSelected{
     if (isSelected) {
-        CGAffineTransform previousTransform = _colorView.transform;
+        CGAffineTransform previousTransform = self.colorView.transform;
         [UIView animateWithDuration:0.2 animations:^{
             self.colorView.transform = CGAffineTransformScale(self.colorView.transform, 1.3, 1.3);
         }completion:^(BOOL finished) {

@@ -62,7 +62,7 @@
 		B99A699F263040160073A99D /* UIView+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965E225ED4BEB0081D7FC /* UIView+Image.h */; };
 		B99A69A22630404D0073A99D /* ColorsCollectionViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B97892B525E9592800C91D62 /* ColorsCollectionViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B99A69A72630406C0073A99D /* ColorCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B97892B325E94B6200C91D62 /* ColorCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B99A69AC263040930073A99D /* UIImage+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965EA25ED5E140081D7FC /* UIImage+Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B99A69AC263040930073A99D /* UIImage+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965EA25ED5E140081D7FC /* UIImage+Size.h */; };
 		B99A69B12630409B0073A99D /* UIImage+Crop.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965F325ED61020081D7FC /* UIImage+Crop.h */; };
 		B99A69B7263040A90073A99D /* UIImageView+Alpha.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965E925ED4D960081D7FC /* UIImageView+Alpha.h */; };
 		B99A69BA263040B10073A99D /* StickersViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B94965F425EE8C630081D7FC /* StickersViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -314,7 +314,7 @@
 			isa = PBXProject;
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Original;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "André Gonçalves";
 				TargetAttributes = {
 					87D427D022DC01A9007427F4 = {
@@ -477,6 +477,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -543,6 +544,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

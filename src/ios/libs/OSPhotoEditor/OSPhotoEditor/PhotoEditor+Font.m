@@ -21,7 +21,7 @@
     if (font == nil) {
         return;
     }
-    CFErrorRef* error;
+    CFErrorRef* error = NULL;
     CTFontManagerRegisterGraphicsFont(font,error);
 }
 

@@ -25,7 +25,8 @@
     UIImagePickerControllerSourceType sourceType = (UIImagePickerControllerSourceType)UIImagePickerControllerSourceTypePhotoLibrary;
     NSString* sourceTypeString = command.arguments[0];
     if ( [sourceTypeString isEqualToString:@"sourcetype"]){
-        if ([[command.arguments[1] string] isEqualToString:@"camera"]){
+        NSString* type = command.arguments[1];
+        if ([type isEqualToString:@"camera"]){
             sourceType = (UIImagePickerControllerSourceType)UIImagePickerControllerSourceTypeCamera;
         }
         

@@ -74,11 +74,11 @@
 //MARK: Bottom Toolbar
 
 -(IBAction) saveButtonTapped:(id) sender{
-    UIImageWriteToSavedPhotosAlbum([self.canvasView toImage],self, @selector(image), nil);
+    UIImageWriteToSavedPhotosAlbum([self.canvasView toImage],self, @selector(image:withPotentialError:contextInfo:), nil);
 }
 
 -(IBAction) shareButtonTapped:(UIButton*) sender{
-    UIActivityViewController* activity = [[UIActivityViewController alloc] initWithActivityItems:[[self canvasView] toImage] applicationActivities:nil];
+    UIActivityViewController* activity = [[UIActivityViewController alloc] initWithActivityItems:@[[[self canvasView] toImage]] applicationActivities:nil];
     [self presentViewController:activity animated:true completion:nil];
 }
 
@@ -98,8 +98,7 @@
 }
 
 //MAKR: helper methods
-
--(void) image{
+-(void) image:(UIImage*) image withPotentialError:(NSError*) error contextInfo:(void*) context{
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Image Saved" message:@"Image successfully saved to Photos Library" preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:alert animated:true completion:nil];

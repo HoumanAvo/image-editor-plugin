@@ -14,10 +14,10 @@
 #import "ColorsCollectionViewDelegate.h"
 #import "StickersViewController.h"
 #import <CoreText/CoreText.h>
-#import "UIImage+Size.h"
 #import "ColorCollectionViewCell.h"
+#import "CropViewController.h"
 
-@interface PhotoEditorViewController : UIViewController<StickersViewControllerDelegate,UITextViewDelegate,ColorDelegate>
+@interface PhotoEditorViewController : UIViewController<StickersViewControllerDelegate,UITextViewDelegate,ColorDelegate,UIGestureRecognizerDelegate,CropViewControllerDelegate>
 /** holding the 2 imageViews original image and drawing & stickers */
 @property(weak)IBOutlet UIView* canvasView;
 //To hold the image

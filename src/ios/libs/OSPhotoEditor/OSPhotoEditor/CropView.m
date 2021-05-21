@@ -435,7 +435,7 @@
 }
 
 - (void)automaticZoomIfEdgeTouched:(CGRect) cropRect{
-    if (CGRectGetMinX(_cropRect) < CGRectGetMinX(_editingRect)-5.0 || CGRectGetMaxX(_cropRect) > CGRectGetMaxX(_editingRect)+5.0 || CGRectGetMinY(_cropRect) < CGRectGetMinY(_editingRect)-5.0 || CGRectGetMaxY(_cropRect) > CGRectGetMaxY(_editingRect)+5.0 ) {
+    if (CGRectGetMinX(cropRect) < CGRectGetMinX(_editingRect)-5.0 || CGRectGetMaxX(cropRect) > CGRectGetMaxX(_editingRect)+5.0 || CGRectGetMinY(cropRect) < CGRectGetMinY(_editingRect)-5.0 || CGRectGetMaxY(cropRect) > CGRectGetMaxY(_editingRect)+5.0 ) {
         [UIView animateWithDuration:1.0 delay:0.0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             [self zoomToCropRect:self.cropRectView.frame];
         } completion:nil];
@@ -444,23 +444,23 @@
 
 - (void)setCropAspectRatio:(CGFloat) ratio shouldCenter:(BOOL)shouldCenter {
     CGRect cropRect = _scrollView.frame;
-    CGFloat width = _cropRect.size.width;
-    CGFloat height = _cropRect.size.height;
+    CGFloat width = cropRect.size.width;
+    CGFloat height = cropRect.size.height;
     if(ratio <= 1.0){
         width = height * ratio;
         if(width > _imageView.bounds.size.width) {
-            width = _cropRect.size.width;
+            width = cropRect.size.width;
             height = width / ratio;
         }
     } else {
         height = width / ratio;
         if(height > _imageView.bounds.size.height) {
-            height = _cropRect.size.height;
+            height = cropRect.size.height;
             width = height * ratio;
         }
     }
-    _cropRect.size = CGSizeMake(width, height);
-    [self zoomToCropRect:_cropRect shouldCenter:shouldCenter animated:false completion:^{
+    cropRect.size = CGSizeMake(width, height);
+    [self zoomToCropRect:cropRect shouldCenter:shouldCenter animated:false completion:^{
         CGFloat scale = self.scrollView.zoomScale;
         self.scrollView.minimumZoomScale = scale;
     }];

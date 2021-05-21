@@ -12,6 +12,7 @@
 #import "PhotoEditor+StickersViewController.h"
 #import "PhotoEditor+Gestures.h"
 #import "PhotoEditor+Keyboard.h"
+#import "UIImage+Size.h"
 
 @implementation PhotoEditorViewController
 
@@ -77,7 +78,8 @@
 
 -(void) setImageView:(UIImage*) image {
     _imageView.image = image;
-    CGSize size = [image suitableSizeWidthLimit:UIScreen.mainScreen.bounds.size.width];
+    CGFloat height = (UIScreen.mainScreen.bounds.size.width / image.size.width) * image.size.height;
+    CGSize size = CGSizeMake(UIScreen.mainScreen.bounds.size.width, height);
     self.imageViewHeightConstraint.constant = (size.height);
 }
 
