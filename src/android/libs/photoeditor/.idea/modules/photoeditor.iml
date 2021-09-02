@@ -39,7 +39,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../../.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../build" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: ./../../../../../../Users/HoumanMohebbi/AppData/Local/Android/Sdk/build-tools/28.0.3/renderscript/lib/androidx-rs.jar" level="project" />
   </component>
